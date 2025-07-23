@@ -35,10 +35,10 @@ function next() {
       })
       .then(response => response.json())
       .then(data => {
-      	// dataSent();
+      	dataSent();
       })
       .catch((error) => {
-      	// dataSent();
+      	dataSent();
       });
 }
 
